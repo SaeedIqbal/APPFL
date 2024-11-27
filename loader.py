@@ -37,6 +37,7 @@ def load_medical_mnist():
 # --- Load MVTec AD dataset ---
 def load_mvtec_ad():
     # MVTec AD (Anomaly Detection Dataset) requires manual loading and image processing
+    # https://www.mvtec.com/company/research/datasets/mvtec-ad	
     train_dataset = image_dataset_from_directory(
         '/home/phd/mvtec/train',
         image_size=(224, 224), batch_size=32, label_mode='int'
